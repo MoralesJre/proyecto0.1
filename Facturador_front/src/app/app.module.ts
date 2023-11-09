@@ -12,8 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NavbarComponent } from './componentes/navbar/navbar.component';
-import { SignupComponent } from './pages/signup/signup.component';
-import { LoginComponent } from './pages/login/login.component';
+
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -25,7 +24,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { authInterceptorProviders } from './service/auth.interceptor';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
-import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
@@ -33,11 +31,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     AppComponent,
     NavbarComponent,
     ClienteComponent,
-    SignupComponent,
-    LoginComponent,
+
     HomeComponent,
     DashboardComponent,
-    UserDashboardComponent
   ],
   imports: [
     MatButtonModule,
