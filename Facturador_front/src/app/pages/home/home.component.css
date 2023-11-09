@@ -1,0 +1,26 @@
+.bootstrap-wrapper {
+    background-color: #f0f0f0; /* Color de fondo del contenedor */
+    padding: 20px; /* Espaciado interno del contenedor */
+  }
+  
+  /* Estilos para el encabezado */
+  h1 {
+    font-size: 36px; /* Tamaño de fuente para el título */
+    color: #333; /* Color del texto del título */
+    margin-bottom: 20px; /* Espaciado inferior para el título */
+  }
+  
+  /* Estilos para el botón de inicio */
+  button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 18px; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar por encima del botón */
+    color: #fff; /* Color del texto del botón */
+  }
