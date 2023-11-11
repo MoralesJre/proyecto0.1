@@ -17,6 +17,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
   getUsuarioByNombre(nombreUsuario: string): Observable<Usuario> {
     const url = `${this.apiUrl}/${nombreUsuario}`;
+    debugger;
     return this.http.get<Usuario>(url)
     .pipe(
       tap(data => {
@@ -26,7 +27,7 @@ export class LoginService {
       catchError(error => {
         Swal.fire({
           icon: 'error',
-          title: 'Oops...',
+          title: 'Lo siento',
           text: 'Usuario no encontrado, si el problema persiste contacte con el Administrador'
         })
         throw error;

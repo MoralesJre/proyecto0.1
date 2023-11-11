@@ -11,8 +11,8 @@ import Swal from 'sweetalert2';
 })
 export class HomeComponent implements OnInit {
 
-  nombreUsuario: string = '';
-  claveUsuario: string = '';
+  nombreUsuario: string = 'admon';
+  claveUsuario: string = '12345678';
   
   constructor(
     private loginService: LoginService,
@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
 
           if (
             usuario.usuario === this.nombreUsuario &&
-            usuario.clave === this.claveUsuario
+            usuario.pass === this.claveUsuario
           ) {
           
           
@@ -40,8 +40,8 @@ export class HomeComponent implements OnInit {
           } else {
             Swal.fire({
               icon: 'error',
-              title: 'Oops...',
-              text: 'Las credenciales son incorrectas',
+              title: 'lo siento',
+              text: 'Los datos ingresados son incorrectos',
             });
           }
         }
